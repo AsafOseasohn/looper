@@ -1,38 +1,100 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+    text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.play {
+    font-size: large;
+    flex-basis: 6%;
+    margin: 1%;
+    border-radius: 15%;
+    background-color: #46d016;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+    font-weight: 500;
 }
 
-.App-link {
-  color: #61dafb;
+.play:hover {
+    font-size: large;
+    flex-basis: 6%;
+    margin: 1%;
+    border-radius: 15%;
+    background-color: #44b51d;
+    transition: ease-in-out 0.2s;
+    font-weight: 500;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.stop {
+    font-size: large;
+    flex-basis: 6%;
+    margin: 1%;
+    border-radius: 15%;
+    background-color: #e90a0a;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+    font-weight: 500;
+}
+
+.stop:hover {
+    font-size: large;
+    flex-basis: 6%;
+    margin: 1%;
+    border-radius: 15%;
+    background-color: #c51616;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+    font-weight: 500;
+}
+
+.pad {
+    display: flex;
+    flex-basis: 28%;
+    background: #ffe847;
+    border: 0.1rem solid black;
+    border-radius: 5%;
+    font-weight: 500;
+    cursor: pointer;
+    outline: none;
+    margin: 0.5%;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: ease-in-out 0.2s;
+}
+
+.pad:hover {
+    display: flex;
+    flex-basis: 28%;
+    background: #e1c70b;
+    transition: ease-in-out 0.2s;
+    border: 0.5px solid black;
+    border-radius: 5%;
+    font-weight: 500;
+    cursor: pointer;
+    outline: none;
+    margin: 0.5%;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.pads {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+    align-self: center;
+    margin: auto;
 }
